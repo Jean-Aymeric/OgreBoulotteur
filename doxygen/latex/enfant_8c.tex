@@ -1,0 +1,125 @@
+\hypertarget{enfant_8c}{}\doxysection{Référence du fichier Ogre\+Boulotteur/enfant.c}
+\label{enfant_8c}\index{OgreBoulotteur/enfant.c@{OgreBoulotteur/enfant.c}}
+
+
+Source de la bibliothèque permettant la gestion du tableau Enfants.  
+
+
+{\ttfamily \#include \char`\"{}enfant.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{enfant_8c_a01d9a8fd94388f5556dfd37340b49e4f}{initialiser\+Enfants}} (\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}} enfants, \mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret)
+\begin{DoxyCompactList}\small\item\em Positionne les \mbox{\hyperlink{struct_enfant}{Enfant}} du tableau Enfants dans la Foret. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{enfant_8c_a70c57f4d99e414435ec828273bc15d55}{initialiser\+Enfant}} (\mbox{\hyperlink{struct_enfant}{Enfant}} $\ast$enfant, \mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret)
+\begin{DoxyCompactList}\small\item\em Permet de positioner un \mbox{\hyperlink{struct_enfant}{Enfant}} das la Foret. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_enfant}{Enfant}} $\ast$ \mbox{\hyperlink{enfant_8c_a3474e6a46343f0464ba51e483d4cefc5}{enfant\+Present}} (\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}} enfants, int x, int y)
+\begin{DoxyCompactList}\small\item\em Permet de vérifier si un \mbox{\hyperlink{struct_enfant}{Enfant}} se trouve aux coordonnées (x, y). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{enfant_8c_a06be5b3309fc8c24b2995255d7db816e}{deplacer\+Enfants}} (\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}} enfants, \mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret)
+\begin{DoxyCompactList}\small\item\em Permet de déplacer tous les \mbox{\hyperlink{struct_enfant}{Enfant}} du tableau Enfants dans la Foret. Seuls les \mbox{\hyperlink{struct_enfant}{Enfant}} à l\textquotesingle{}Etat V\+I\+V\+A\+NT sont déplacés. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{enfant_8c_a3ec373482a607d8c1d1e7b3c3b68ceda}{deplacer\+Enfant}} (\mbox{\hyperlink{struct_enfant}{Enfant}} $\ast$enfant, \mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret)
+\begin{DoxyCompactList}\small\item\em Permet de déplacer un \mbox{\hyperlink{struct_enfant}{Enfant}} dans la Foret. Si l\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} est à l\textquotesingle{}Etat M\+O\+RT, il ne se déplacera pas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Source de la bibliothèque permettant la gestion du tableau Enfants. 
+
+\begin{DoxyAuthor}{Auteur}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+August 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{enfant_8c_a3ec373482a607d8c1d1e7b3c3b68ceda}\label{enfant_8c_a3ec373482a607d8c1d1e7b3c3b68ceda}} 
+\index{enfant.c@{enfant.c}!deplacerEnfant@{deplacerEnfant}}
+\index{deplacerEnfant@{deplacerEnfant}!enfant.c@{enfant.c}}
+\doxysubsubsection{\texorpdfstring{deplacerEnfant()}{deplacerEnfant()}}
+{\footnotesize\ttfamily void deplacer\+Enfant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enfant}{Enfant}} $\ast$}]{enfant,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret }\end{DoxyParamCaption})}
+
+
+
+Permet de déplacer un \mbox{\hyperlink{struct_enfant}{Enfant}} dans la Foret. Si l\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} est à l\textquotesingle{}Etat M\+O\+RT, il ne se déplacera pas. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em enfant} & Pointeur vers un \mbox{\hyperlink{struct_enfant}{Enfant}} \\
+\hline
+{\em foret} & pointeur vers la Foret. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{enfant_8c_a06be5b3309fc8c24b2995255d7db816e}\label{enfant_8c_a06be5b3309fc8c24b2995255d7db816e}} 
+\index{enfant.c@{enfant.c}!deplacerEnfants@{deplacerEnfants}}
+\index{deplacerEnfants@{deplacerEnfants}!enfant.c@{enfant.c}}
+\doxysubsubsection{\texorpdfstring{deplacerEnfants()}{deplacerEnfants()}}
+{\footnotesize\ttfamily void deplacer\+Enfants (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}}}]{enfants,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret }\end{DoxyParamCaption})}
+
+
+
+Permet de déplacer tous les \mbox{\hyperlink{struct_enfant}{Enfant}} du tableau Enfants dans la Foret. Seuls les \mbox{\hyperlink{struct_enfant}{Enfant}} à l\textquotesingle{}Etat V\+I\+V\+A\+NT sont déplacés. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em enfants} & Un tableau de type Enfants \\
+\hline
+{\em foret} & pointeur vers la Foret. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{enfant_8c_a3474e6a46343f0464ba51e483d4cefc5}\label{enfant_8c_a3474e6a46343f0464ba51e483d4cefc5}} 
+\index{enfant.c@{enfant.c}!enfantPresent@{enfantPresent}}
+\index{enfantPresent@{enfantPresent}!enfant.c@{enfant.c}}
+\doxysubsubsection{\texorpdfstring{enfantPresent()}{enfantPresent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_enfant}{Enfant}}$\ast$ enfant\+Present (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}}}]{enfants,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Permet de vérifier si un \mbox{\hyperlink{struct_enfant}{Enfant}} se trouve aux coordonnées (x, y). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em enfants} & Un tableau de type Enfants \\
+\hline
+{\em x} & Un {\ttfamily int} pour l\textquotesingle{}absisse de l\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} \\
+\hline
+{\em y} & Un {\ttfamily int} pour l\textquotesingle{}ordonnée de l\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers un \mbox{\hyperlink{struct_enfant}{Enfant}}, si un \mbox{\hyperlink{struct_enfant}{Enfant}} est présent en coordonnées (x, y). 
+
+{\ttfamily N\+U\+LL}, si aucun \mbox{\hyperlink{struct_enfant}{Enfant}} n\textquotesingle{}est présent en coordonnées (x, y). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enfant_8c_a70c57f4d99e414435ec828273bc15d55}\label{enfant_8c_a70c57f4d99e414435ec828273bc15d55}} 
+\index{enfant.c@{enfant.c}!initialiserEnfant@{initialiserEnfant}}
+\index{initialiserEnfant@{initialiserEnfant}!enfant.c@{enfant.c}}
+\doxysubsubsection{\texorpdfstring{initialiserEnfant()}{initialiserEnfant()}}
+{\footnotesize\ttfamily void initialiser\+Enfant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enfant}{Enfant}} $\ast$}]{enfant,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret }\end{DoxyParamCaption})}
+
+
+
+Permet de positioner un \mbox{\hyperlink{struct_enfant}{Enfant}} das la Foret. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em enfant} & pointeur vers un \mbox{\hyperlink{struct_enfant}{Enfant}}. \\
+\hline
+{\em foret} & pointeur vers la Foret. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{enfant_8c_a01d9a8fd94388f5556dfd37340b49e4f}\label{enfant_8c_a01d9a8fd94388f5556dfd37340b49e4f}} 
+\index{enfant.c@{enfant.c}!initialiserEnfants@{initialiserEnfants}}
+\index{initialiserEnfants@{initialiserEnfants}!enfant.c@{enfant.c}}
+\doxysubsubsection{\texorpdfstring{initialiserEnfants()}{initialiserEnfants()}}
+{\footnotesize\ttfamily void initialiser\+Enfants (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}}}]{enfants,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret }\end{DoxyParamCaption})}
+
+
+
+Positionne les \mbox{\hyperlink{struct_enfant}{Enfant}} du tableau Enfants dans la Foret. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em enfants} & Un tableau de type Enfants. \\
+\hline
+\end{DoxyParams}

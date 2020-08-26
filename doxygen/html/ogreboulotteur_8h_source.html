@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OgreBoulotteur:  Fichier source de OgreBoulotteur/ogreboulotteur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OgreBoulotteur
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2381fc9e6190dd1d9b9433f1efbfc2fd.html">OgreBoulotteur</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ogreboulotteur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ogreboulotteur_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef OGREBOULOTTEUR_H_INCLUDED</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define OGREBOULOTTEUR_H_INCLUDED</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a40a0a806873bf84870b47837708b2814">   14</a></span>&#160;<span class="preprocessor">#define FORET_HAUTEUR 20     </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a0c48e08ae1a67455f3fcbc1acde9e3c3">   15</a></span>&#160;<span class="preprocessor">#define FORET_LONGUEUR 40    </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#ac2544bb4c8033e707d869bc00ee9b9b7">   16</a></span>&#160;<span class="preprocessor">#define FORET_SOL 32         </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a69b67bd1a9db0f8f4f91ba74c8d2c351">   17</a></span>&#160;<span class="preprocessor">#define FORET_ARBRE 219      </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a7a37a18d601429330dccb715ef09548d">   18</a></span>&#160;<span class="preprocessor">#define FORET_ENFANT 169     </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a41a96a20601ffa693edc01fd5acb1221">   19</a></span>&#160;<span class="preprocessor">#define FORET_OGRE 64        </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#acfb69f6f7761acf3a8b9fb1ffa3c2128">   20</a></span>&#160;<span class="preprocessor">#define FORET_MORT 241       </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a025f24a06ab222b256177e42be307d55">   21</a></span>&#160;<span class="preprocessor">#define NOMBRE_ENFANTS 50    </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define FORET_DENSITE 5      </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a34a3253d5bd2ac1f264c85ef42731a1c">   33</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">char</span> <a class="code" href="ogreboulotteur_8h.html#a34a3253d5bd2ac1f264c85ef42731a1c">Foret</a>[<a class="code" href="ogreboulotteur_8h.html#a40a0a806873bf84870b47837708b2814">FORET_HAUTEUR</a>][<a class="code" href="ogreboulotteur_8h.html#a0c48e08ae1a67455f3fcbc1acde9e3c3">FORET_LONGUEUR</a>];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1b">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1b">Etat</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4">   40</a></span>&#160;    <a class="code" href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4">VIVANT</a>, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1ba031fe5e154a96f85c034f6ba509060b4">MORT</a>    </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1ba031fe5e154a96f85c034f6ba509060b4">   42</a></span>&#160;} <a class="code" href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1b">Etat</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_enfant.html">   48</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_enfant.html">Enfant</a> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_enfant.html#a6150e0515f7202e2fb518f7206ed97dc">   49</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_enfant.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;      </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_enfant.html#a0a2f84ed7838f07779ae24c5a9086d33">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_enfant.html#a0a2f84ed7838f07779ae24c5a9086d33">y</a>;      </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_enfant.html#ad12ce560f527cba2b932bd142371420a">   51</a></span>&#160;    <a class="code" href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1b">Etat</a> <a class="code" href="struct_enfant.html#ad12ce560f527cba2b932bd142371420a">etat</a>;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <a class="code" href="struct_enfant.html">Enfant</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a9e316150a6351446edf039c62691b0b7">   58</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="struct_enfant.html">Enfant</a> <a class="code" href="ogreboulotteur_8h.html#a9e316150a6351446edf039c62691b0b7">Enfants</a>[<a class="code" href="ogreboulotteur_8h.html#a025f24a06ab222b256177e42be307d55">NOMBRE_ENFANTS</a>];</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct_ogre.html">   64</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_ogre.html">Ogre</a> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> x, y;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <a class="code" href="struct_ogre.html">Ogre</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="ogreboulotteur_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">   72</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="ogreboulotteur_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    HAUT,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    DROITE,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    BAS,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    GAUCHE</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <a class="code" href="ogreboulotteur_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="foret_8h.html">foret.h</a>&quot;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif // OGREBOULOTTEUR_H_INCLUDED</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_enfant_html_a0a2f84ed7838f07779ae24c5a9086d33"><div class="ttname"><a href="struct_enfant.html#a0a2f84ed7838f07779ae24c5a9086d33">Enfant::y</a></div><div class="ttdeci">int y</div><div class="ttdoc">Position dans la hauteur dans le tableau Foret.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:50</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a40a0a806873bf84870b47837708b2814"><div class="ttname"><a href="ogreboulotteur_8h.html#a40a0a806873bf84870b47837708b2814">FORET_HAUTEUR</a></div><div class="ttdeci">#define FORET_HAUTEUR</div><div class="ttdoc">Définit la hauteur du tableau Foret.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:14</div></div>
+<div class="ttc" id="astruct_enfant_html_a6150e0515f7202e2fb518f7206ed97dc"><div class="ttname"><a href="struct_enfant.html#a6150e0515f7202e2fb518f7206ed97dc">Enfant::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">Position dans la longueur dans le tableau Foret.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:49</div></div>
+<div class="ttc" id="aforet_8h_html"><div class="ttname"><a href="foret_8h.html">foret.h</a></div><div class="ttdoc">Header de la bibliothèque permettant la gestion du tableau Foret.</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a224b9163917ac32fc95a60d8c1eec3aa"><div class="ttname"><a href="ogreboulotteur_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a></div><div class="ttdeci">Direction</div><div class="ttdoc">Permet d'indiquer une direction Haut, Bas, Droite ou Gauche.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:72</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a025f24a06ab222b256177e42be307d55"><div class="ttname"><a href="ogreboulotteur_8h.html#a025f24a06ab222b256177e42be307d55">NOMBRE_ENFANTS</a></div><div class="ttdeci">#define NOMBRE_ENFANTS</div><div class="ttdoc">Définit le nombre initial d'enfants.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:21</div></div>
+<div class="ttc" id="astruct_enfant_html_ad12ce560f527cba2b932bd142371420a"><div class="ttname"><a href="struct_enfant.html#ad12ce560f527cba2b932bd142371420a">Enfant::etat</a></div><div class="ttdeci">Etat etat</div><div class="ttdoc">Etat de l'Enfant, VIVANT ou MORT.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:51</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a9e316150a6351446edf039c62691b0b7"><div class="ttname"><a href="ogreboulotteur_8h.html#a9e316150a6351446edf039c62691b0b7">Enfants</a></div><div class="ttdeci">Enfant Enfants[NOMBRE_ENFANTS]</div><div class="ttdoc">Ce tableau à une dimension permet de stocker chaque Enfant. Sa taille est définit par NOMBRE_ENFANTS.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:58</div></div>
+<div class="ttc" id="astruct_ogre_html"><div class="ttname"><a href="struct_ogre.html">Ogre</a></div><div class="ttdoc">Contient la position de l'ogre dans le tableau Foret.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:64</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4"><div class="ttname"><a href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4">VIVANT</a></div><div class="ttdeci">@ VIVANT</div><div class="ttdoc">L'Enfant est vivant et peut bouger.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:40</div></div>
+<div class="ttc" id="astruct_enfant_html"><div class="ttname"><a href="struct_enfant.html">Enfant</a></div><div class="ttdoc">Contient la position d'un enfant dans le tableau Foret et son Etat.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:48</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a767b7a63d7677f92d697621b4166af1b"><div class="ttname"><a href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1b">Etat</a></div><div class="ttdeci">Etat</div><div class="ttdoc">Donne l'état dans lequel se trouve un élément mobile, pour ce programme un Enfant.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:39</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a767b7a63d7677f92d697621b4166af1ba031fe5e154a96f85c034f6ba509060b4"><div class="ttname"><a href="ogreboulotteur_8h.html#a767b7a63d7677f92d697621b4166af1ba031fe5e154a96f85c034f6ba509060b4">MORT</a></div><div class="ttdeci">@ MORT</div><div class="ttdoc">L'Enfant s'est fait boulotté.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:41</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a34a3253d5bd2ac1f264c85ef42731a1c"><div class="ttname"><a href="ogreboulotteur_8h.html#a34a3253d5bd2ac1f264c85ef42731a1c">Foret</a></div><div class="ttdeci">char Foret[FORET_HAUTEUR][FORET_LONGUEUR]</div><div class="ttdoc">Ce tableau à 2 dimensions contient tous les éléments immobiles du programme :</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:33</div></div>
+<div class="ttc" id="aogreboulotteur_8h_html_a0c48e08ae1a67455f3fcbc1acde9e3c3"><div class="ttname"><a href="ogreboulotteur_8h.html#a0c48e08ae1a67455f3fcbc1acde9e3c3">FORET_LONGUEUR</a></div><div class="ttdeci">#define FORET_LONGUEUR</div><div class="ttdoc">Définit la longueur du tableau Foret.</div><div class="ttdef"><b>Definition:</b> ogreboulotteur.h:15</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

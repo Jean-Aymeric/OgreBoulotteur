@@ -1,0 +1,81 @@
+\hypertarget{foret_8h}{}\doxysection{Référence du fichier Ogre\+Boulotteur/foret.h}
+\label{foret_8h}\index{OgreBoulotteur/foret.h@{OgreBoulotteur/foret.h}}
+
+
+Header de la bibliothèque permettant la gestion du tableau Foret.  
+
+
+{\ttfamily \#include \char`\"{}enfant.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ogre.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{foret_8h_ac1a61272e4411fd6caafda9e1876445f}{afficher\+Foret}} (\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret, \mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}} enfants, \mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$ogre)
+\begin{DoxyCompactList}\small\item\em Fonction affichant la Foret dans la console ainsi que les éléments Enfants et \mbox{\hyperlink{struct_ogre}{Ogre}} positionnés dessus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{foret_8h_af5be5e451ad60d27aacace39ad1ca570}{initialiser\+Foret}} (\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret)
+\begin{DoxyCompactList}\small\item\em Fonction permettant d\textquotesingle{}initialiser la Foret en y plaçant aléatoirement Arbre et Sol. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{foret_8h_ad343fe7b99da6aac1be15742231c5002}{faire\+Vivre\+Foret}} (\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret, \mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}} enfants, \mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$ogre)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de faire bouger tous les \mbox{\hyperlink{struct_enfant}{Enfant}} et l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Header de la bibliothèque permettant la gestion du tableau Foret. 
+
+\begin{DoxyAuthor}{Auteur}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+August 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{foret_8h_ac1a61272e4411fd6caafda9e1876445f}\label{foret_8h_ac1a61272e4411fd6caafda9e1876445f}} 
+\index{foret.h@{foret.h}!afficherForet@{afficherForet}}
+\index{afficherForet@{afficherForet}!foret.h@{foret.h}}
+\doxysubsubsection{\texorpdfstring{afficherForet()}{afficherForet()}}
+{\footnotesize\ttfamily void afficher\+Foret (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}}}]{enfants,  }\item[{\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$}]{ogre }\end{DoxyParamCaption})}
+
+
+
+Fonction affichant la Foret dans la console ainsi que les éléments Enfants et \mbox{\hyperlink{struct_ogre}{Ogre}} positionnés dessus. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em foret} & La Foret à afficher. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{foret_8h_ad343fe7b99da6aac1be15742231c5002}\label{foret_8h_ad343fe7b99da6aac1be15742231c5002}} 
+\index{foret.h@{foret.h}!faireVivreForet@{faireVivreForet}}
+\index{faireVivreForet@{faireVivreForet}!foret.h@{foret.h}}
+\doxysubsubsection{\texorpdfstring{faireVivreForet()}{faireVivreForet()}}
+{\footnotesize\ttfamily void faire\+Vivre\+Foret (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}}}]{enfants,  }\item[{\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$}]{ogre }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de faire bouger tous les \mbox{\hyperlink{struct_enfant}{Enfant}} et l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em foret} & La Foret dans laquelle les éléments sont positionnés. \\
+\hline
+{\em enfants} & Les \mbox{\hyperlink{struct_enfant}{Enfant}} à faire bouger. \\
+\hline
+{\em ogre} & Un pointeur vers l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} à faire bouger. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{foret_8h_af5be5e451ad60d27aacace39ad1ca570}\label{foret_8h_af5be5e451ad60d27aacace39ad1ca570}} 
+\index{foret.h@{foret.h}!initialiserForet@{initialiserForet}}
+\index{initialiserForet@{initialiserForet}!foret.h@{foret.h}}
+\doxysubsubsection{\texorpdfstring{initialiserForet()}{initialiserForet()}}
+{\footnotesize\ttfamily void initialiser\+Foret (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant d\textquotesingle{}initialiser la Foret en y plaçant aléatoirement Arbre et Sol. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em foret} & La Foret à initialiser. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,110 @@
+\hypertarget{ogre_8h}{}\doxysection{Référence du fichier Ogre\+Boulotteur/ogre.h}
+\label{ogre_8h}\index{OgreBoulotteur/ogre.h@{OgreBoulotteur/ogre.h}}
+
+
+Header de la bibliothèque permettant la gestion de l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}.  
+
+
+{\ttfamily \#include \char`\"{}ogreboulotteur.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ogre_8h_ac921385f52317297020a28055ac2d8b5}{initialiser\+Ogre}} (\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$ogre, \mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret)
+\begin{DoxyCompactList}\small\item\em Positionne l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} dans la Foret. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ogre_8h_a8bb4d282e21f230df61ad5ba3da7a1e1}{deplacer\+Ogre}} (\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$ogre, \mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}} foret, \mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}} enfants)
+\begin{DoxyCompactList}\small\item\em Permet de dépalcer l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} dans la Foret. Si l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} rencontre un \mbox{\hyperlink{struct_enfant}{Enfant}}, il le dévore. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$ \mbox{\hyperlink{ogre_8h_a9c001416d8207f44d6dedfdaa369d23f}{ogre\+Present}} (\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$ogre, int x, int y)
+\begin{DoxyCompactList}\small\item\em Permet de vérifier si l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} trouve aux coordonnées (x, y). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ogre_8h_af35060c655ef307471980a2ec4efcc35}{boulotter\+Enfants}} (\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$ogre, \mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}} enfants)
+\begin{DoxyCompactList}\small\item\em Vérifie si l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} se trouve aux mêmes coordonnées qu\textquotesingle{}un ou plusieurs \mbox{\hyperlink{struct_enfant}{Enfant}}. Si c\textquotesingle{}est le cas, il le(s) dévore. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Header de la bibliothèque permettant la gestion de l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}. 
+
+\begin{DoxyAuthor}{Auteur}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+August 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{ogre_8h_af35060c655ef307471980a2ec4efcc35}\label{ogre_8h_af35060c655ef307471980a2ec4efcc35}} 
+\index{ogre.h@{ogre.h}!boulotterEnfants@{boulotterEnfants}}
+\index{boulotterEnfants@{boulotterEnfants}!ogre.h@{ogre.h}}
+\doxysubsubsection{\texorpdfstring{boulotterEnfants()}{boulotterEnfants()}}
+{\footnotesize\ttfamily void boulotter\+Enfants (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$}]{ogre,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}}}]{enfants }\end{DoxyParamCaption})}
+
+
+
+Vérifie si l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} se trouve aux mêmes coordonnées qu\textquotesingle{}un ou plusieurs \mbox{\hyperlink{struct_enfant}{Enfant}}. Si c\textquotesingle{}est le cas, il le(s) dévore. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ogre} & Un pointeur vers l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}. \\
+\hline
+{\em enfants} & Un tableau de type Enfants. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ogre_8h_a8bb4d282e21f230df61ad5ba3da7a1e1}\label{ogre_8h_a8bb4d282e21f230df61ad5ba3da7a1e1}} 
+\index{ogre.h@{ogre.h}!deplacerOgre@{deplacerOgre}}
+\index{deplacerOgre@{deplacerOgre}!ogre.h@{ogre.h}}
+\doxysubsubsection{\texorpdfstring{deplacerOgre()}{deplacerOgre()}}
+{\footnotesize\ttfamily void deplacer\+Ogre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$}]{ogre,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}}}]{enfants }\end{DoxyParamCaption})}
+
+
+
+Permet de dépalcer l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} dans la Foret. Si l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} rencontre un \mbox{\hyperlink{struct_enfant}{Enfant}}, il le dévore. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ogre} & Un pointeur vers l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}. \\
+\hline
+{\em foret} & Un pointeur vers la Foret. \\
+\hline
+{\em enfants} & Un tableau de type Enfants, afin de vérifier si l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} boulotte un \mbox{\hyperlink{struct_enfant}{Enfant}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ogre_8h_ac921385f52317297020a28055ac2d8b5}\label{ogre_8h_ac921385f52317297020a28055ac2d8b5}} 
+\index{ogre.h@{ogre.h}!initialiserOgre@{initialiserOgre}}
+\index{initialiserOgre@{initialiserOgre}!ogre.h@{ogre.h}}
+\doxysubsubsection{\texorpdfstring{initialiserOgre()}{initialiserOgre()}}
+{\footnotesize\ttfamily void initialiser\+Ogre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$}]{ogre,  }\item[{\mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}}]{foret }\end{DoxyParamCaption})}
+
+
+
+Positionne l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} dans la Foret. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ogre} & Un pointeur vers l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}. \\
+\hline
+{\em foret} & Un pointeur vers la Foret. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ogre_8h_a9c001416d8207f44d6dedfdaa369d23f}\label{ogre_8h_a9c001416d8207f44d6dedfdaa369d23f}} 
+\index{ogre.h@{ogre.h}!ogrePresent@{ogrePresent}}
+\index{ogrePresent@{ogrePresent}!ogre.h@{ogre.h}}
+\doxysubsubsection{\texorpdfstring{ogrePresent()}{ogrePresent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ogre}{Ogre}}$\ast$ ogre\+Present (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ogre}{Ogre}} $\ast$}]{ogre,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Permet de vérifier si l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} trouve aux coordonnées (x, y). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ogre} & Un pointeur vers l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}. \\
+\hline
+{\em x} & Un {\ttfamily int} pour l\textquotesingle{}absisse de l\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} \\
+\hline
+{\em y} & Un {\ttfamily int} pour l\textquotesingle{}ordonnée de l\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un pointeur vers l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}}, s\textquotesingle{}il est présent en coordonnées (x, y). 
+
+{\ttfamily N\+U\+LL}, si l\textquotesingle{}\mbox{\hyperlink{struct_ogre}{Ogre}} n\textquotesingle{}est présent en coordonnées (x, y). 
+\end{DoxyReturn}
