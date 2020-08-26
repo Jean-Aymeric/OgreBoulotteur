@@ -1,0 +1,146 @@
+\hypertarget{ogreboulotteur_8h}{}\doxysection{Ogre\+Boulotteur/ogreboulotteur.h File Reference}
+\label{ogreboulotteur_8h}\index{OgreBoulotteur/ogreboulotteur.h@{OgreBoulotteur/ogreboulotteur.h}}
+
+
+La bibliothèque principale du programme.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}foret.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_enfant}{Enfant}}
+\begin{DoxyCompactList}\small\item\em Contient la position d\textquotesingle{}un enfant dans le tableau Foret et son Etat. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_ogre}{Ogre}}
+\begin{DoxyCompactList}\small\item\em Contient la position de l\textquotesingle{}ogre dans le tableau Foret. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a40a0a806873bf84870b47837708b2814}\label{ogreboulotteur_8h_a40a0a806873bf84870b47837708b2814}} 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_a40a0a806873bf84870b47837708b2814}{F\+O\+R\+E\+T\+\_\+\+H\+A\+U\+T\+E\+UR}}~20
+\begin{DoxyCompactList}\small\item\em Définit la hauteur du tableau Foret. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a0c48e08ae1a67455f3fcbc1acde9e3c3}\label{ogreboulotteur_8h_a0c48e08ae1a67455f3fcbc1acde9e3c3}} 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_a0c48e08ae1a67455f3fcbc1acde9e3c3}{F\+O\+R\+E\+T\+\_\+\+L\+O\+N\+G\+U\+E\+UR}}~40
+\begin{DoxyCompactList}\small\item\em Définit la longueur du tableau Foret. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_ac2544bb4c8033e707d869bc00ee9b9b7}\label{ogreboulotteur_8h_ac2544bb4c8033e707d869bc00ee9b9b7}} 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_ac2544bb4c8033e707d869bc00ee9b9b7}{F\+O\+R\+E\+T\+\_\+\+S\+OL}}~32
+\begin{DoxyCompactList}\small\item\em Définit le caractère A\+S\+C\+CI utilisé pour représenter le sol. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a69b67bd1a9db0f8f4f91ba74c8d2c351}\label{ogreboulotteur_8h_a69b67bd1a9db0f8f4f91ba74c8d2c351}} 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_a69b67bd1a9db0f8f4f91ba74c8d2c351}{F\+O\+R\+E\+T\+\_\+\+A\+R\+B\+RE}}~219
+\begin{DoxyCompactList}\small\item\em Définit le caractère A\+S\+C\+CI utilisé pour représenter un arbre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a7a37a18d601429330dccb715ef09548d}\label{ogreboulotteur_8h_a7a37a18d601429330dccb715ef09548d}} 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_a7a37a18d601429330dccb715ef09548d}{F\+O\+R\+E\+T\+\_\+\+E\+N\+F\+A\+NT}}~169
+\begin{DoxyCompactList}\small\item\em Définit le caractère A\+S\+C\+CI utilisé pour représenter un enfant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a41a96a20601ffa693edc01fd5acb1221}\label{ogreboulotteur_8h_a41a96a20601ffa693edc01fd5acb1221}} 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_a41a96a20601ffa693edc01fd5acb1221}{F\+O\+R\+E\+T\+\_\+\+O\+G\+RE}}~64
+\begin{DoxyCompactList}\small\item\em Définit le caractère A\+S\+C\+CI utilisé pour représenter l\textquotesingle{}ogre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_acfb69f6f7761acf3a8b9fb1ffa3c2128}\label{ogreboulotteur_8h_acfb69f6f7761acf3a8b9fb1ffa3c2128}} 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_acfb69f6f7761acf3a8b9fb1ffa3c2128}{F\+O\+R\+E\+T\+\_\+\+M\+O\+RT}}~241
+\begin{DoxyCompactList}\small\item\em Définit le caractère A\+S\+C\+CI utilisé pour représenter un enfant mort. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a025f24a06ab222b256177e42be307d55}\label{ogreboulotteur_8h_a025f24a06ab222b256177e42be307d55}} 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_a025f24a06ab222b256177e42be307d55}{N\+O\+M\+B\+R\+E\+\_\+\+E\+N\+F\+A\+N\+TS}}~50
+\begin{DoxyCompactList}\small\item\em Définit le nombre initial d\textquotesingle{}enfants. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{ogreboulotteur_8h_a94e07b58505f713f7e5b4ccac59f2d84}{F\+O\+R\+E\+T\+\_\+\+D\+E\+N\+S\+I\+TE}}~5
+\begin{DoxyCompactList}\small\item\em Définit la densité d\textquotesingle{}arbre dans la forêt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}\mbox{[}\mbox{\hyperlink{ogreboulotteur_8h_a40a0a806873bf84870b47837708b2814}{F\+O\+R\+E\+T\+\_\+\+H\+A\+U\+T\+E\+UR}}\mbox{]}\mbox{[}\mbox{\hyperlink{ogreboulotteur_8h_a0c48e08ae1a67455f3fcbc1acde9e3c3}{F\+O\+R\+E\+T\+\_\+\+L\+O\+N\+G\+U\+E\+UR}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Ce tableau à 2 dimensions contient tous les éléments immobiles du programme \+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_ac88c635c0ccc85a6bf936b2b5ac1d382}\label{ogreboulotteur_8h_ac88c635c0ccc85a6bf936b2b5ac1d382}} 
+typedef enum \mbox{\hyperlink{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1b}{Etat}} {\bfseries Etat}
+\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a68db050edd5c0f73e318a1ab4be73ee6}\label{ogreboulotteur_8h_a68db050edd5c0f73e318a1ab4be73ee6}} 
+typedef struct \mbox{\hyperlink{struct_enfant}{Enfant}} {\bfseries Enfant}
+\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}\label{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}} 
+typedef \mbox{\hyperlink{struct_enfant}{Enfant}} \mbox{\hyperlink{ogreboulotteur_8h_a9e316150a6351446edf039c62691b0b7}{Enfants}}\mbox{[}\mbox{\hyperlink{ogreboulotteur_8h_a025f24a06ab222b256177e42be307d55}{N\+O\+M\+B\+R\+E\+\_\+\+E\+N\+F\+A\+N\+TS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Ce tableau à une dimension permet de stocker chaque \mbox{\hyperlink{struct_enfant}{Enfant}}. Sa taille est définit par N\+O\+M\+B\+R\+E\+\_\+\+E\+N\+F\+A\+N\+TS. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a40c322e56aab523050505961edec4fc7}\label{ogreboulotteur_8h_a40c322e56aab523050505961edec4fc7}} 
+typedef struct \mbox{\hyperlink{struct_ogre}{Ogre}} {\bfseries Ogre}
+\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_ad196bf510b28a9ba4c872e96dfd16f92}\label{ogreboulotteur_8h_ad196bf510b28a9ba4c872e96dfd16f92}} 
+typedef enum \mbox{\hyperlink{ogreboulotteur_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} {\bfseries Direction}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1b}{Etat}} \{ \mbox{\hyperlink{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4}{V\+I\+V\+A\+NT}}, 
+\mbox{\hyperlink{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba031fe5e154a96f85c034f6ba509060b4}{M\+O\+RT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Donne l\textquotesingle{}état dans lequel se trouve un élément mobile, pour ce programme un \mbox{\hyperlink{struct_enfant}{Enfant}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ogreboulotteur_8h_a224b9163917ac32fc95a60d8c1eec3aa}\label{ogreboulotteur_8h_a224b9163917ac32fc95a60d8c1eec3aa}} 
+enum \mbox{\hyperlink{ogreboulotteur_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \{ {\bfseries H\+A\+UT}, 
+{\bfseries D\+R\+O\+I\+TE}, 
+{\bfseries B\+AS}, 
+{\bfseries G\+A\+U\+C\+HE}
+ \}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}indiquer une direction Haut, Bas, Droite ou Gauche. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La bibliothèque principale du programme. 
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+August 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ogreboulotteur_8h_a94e07b58505f713f7e5b4ccac59f2d84}\label{ogreboulotteur_8h_a94e07b58505f713f7e5b4ccac59f2d84}} 
+\index{ogreboulotteur.h@{ogreboulotteur.h}!FORET\_DENSITE@{FORET\_DENSITE}}
+\index{FORET\_DENSITE@{FORET\_DENSITE}!ogreboulotteur.h@{ogreboulotteur.h}}
+\doxysubsubsection{\texorpdfstring{FORET\_DENSITE}{FORET\_DENSITE}}
+{\footnotesize\ttfamily \#define F\+O\+R\+E\+T\+\_\+\+D\+E\+N\+S\+I\+TE~5}
+
+
+
+Définit la densité d\textquotesingle{}arbre dans la forêt. 
+
+Plus le nombre est élevé et moins les arbres seront nombreux. Il y a 1 chance sur le nombre entré de créer un arbre. ~\newline
+ 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}\label{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}} 
+\index{ogreboulotteur.h@{ogreboulotteur.h}!Foret@{Foret}}
+\index{Foret@{Foret}!ogreboulotteur.h@{ogreboulotteur.h}}
+\doxysubsubsection{\texorpdfstring{Foret}{Foret}}
+{\footnotesize\ttfamily char $\ast$$\ast$ Foret}
+
+
+
+Ce tableau à 2 dimensions contient tous les éléments immobiles du programme \+: 
+
+
+\begin{DoxyItemize}
+\item les arbres.
+\item les sols. Sa hauteur est définie par la valeur de F\+O\+R\+E\+T\+\_\+\+H\+A\+U\+T\+E\+UR et sa longueur par F\+O\+R\+E\+T\+\_\+\+L\+O\+N\+G\+U\+E\+UR. 
+\end{DoxyItemize}
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1b}\label{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1b}} 
+\index{ogreboulotteur.h@{ogreboulotteur.h}!Etat@{Etat}}
+\index{Etat@{Etat}!ogreboulotteur.h@{ogreboulotteur.h}}
+\doxysubsubsection{\texorpdfstring{Etat}{Etat}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1b}{Etat}}}
+
+
+
+Donne l\textquotesingle{}état dans lequel se trouve un élément mobile, pour ce programme un \mbox{\hyperlink{struct_enfant}{Enfant}}. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VIVANT@{VIVANT}!ogreboulotteur.h@{ogreboulotteur.h}}\index{ogreboulotteur.h@{ogreboulotteur.h}!VIVANT@{VIVANT}}}\mbox{\Hypertarget{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4}\label{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4}} 
+V\+I\+V\+A\+NT&L\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} est vivant et peut bouger. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MORT@{MORT}!ogreboulotteur.h@{ogreboulotteur.h}}\index{ogreboulotteur.h@{ogreboulotteur.h}!MORT@{MORT}}}\mbox{\Hypertarget{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba031fe5e154a96f85c034f6ba509060b4}\label{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba031fe5e154a96f85c034f6ba509060b4}} 
+M\+O\+RT&L\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} s\textquotesingle{}est fait boulotté. \\
+\hline
+
+\end{DoxyEnumFields}
