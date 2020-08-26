@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "defmnovxy",
+  0: "abdefimnovxy",
   1: "eo",
-  2: "mo",
-  3: "m",
+  2: "efmo",
+  3: "abdefimo",
   4: "exy",
   5: "ef",
   6: "de",
@@ -28,14 +28,14 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Data Structures",
-  2: "Files",
-  3: "Functions",
+  0: "Tout",
+  1: "Structures de données",
+  2: "Fichiers",
+  3: "Fonctions",
   4: "Variables",
-  5: "Typedefs",
-  6: "Enumerations",
-  7: "Enumerator",
+  5: "Définitions de type",
+  6: "Énumérations",
+  7: "Valeurs énumérées",
   8: "Macros",
   9: "Pages"
 };

@@ -1,3 +1,10 @@
+/*****************************************************************//**
+ * \file   enfant.c
+ * \brief  Source de la bibliothèque permettant la gestion du tableau Enfants.
+ *
+ * \author Jean-Aymeric DIET jeanaymeric@gmail.com
+ * \date   August 2020
+ *********************************************************************/
 #include "enfant.h"
 
 void initialiserEnfants (Enfants enfants, Foret foret) {

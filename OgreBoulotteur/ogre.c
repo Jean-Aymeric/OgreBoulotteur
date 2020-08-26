@@ -1,3 +1,10 @@
+/*****************************************************************//**
+ * \file   ogre.c
+ * \brief  Source de la bibliothèque permettant la gestion de l'Ogre.
+ *
+ * \author Jean-Aymeric DIET jeanaymeric@gmail.com
+ * \date   August 2020
+ *********************************************************************/
 #include "ogre.h"
 
 void initialiserOgre (Ogre* ogre, Foret foret) {

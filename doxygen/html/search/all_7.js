@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_21',['x',['../struct_enfant.html#a6150e0515f7202e2fb518f7206ed97dc',1,'Enfant']]]
+  ['nombre_5fenfants_31',['NOMBRE_ENFANTS',['../ogreboulotteur_8h.html#a025f24a06ab222b256177e42be307d55',1,'ogreboulotteur.h']]]
 ];

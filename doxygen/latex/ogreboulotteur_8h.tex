@@ -1,15 +1,15 @@
-\hypertarget{ogreboulotteur_8h}{}\doxysection{Ogre\+Boulotteur/ogreboulotteur.h File Reference}
+\hypertarget{ogreboulotteur_8h}{}\doxysection{Référence du fichier Ogre\+Boulotteur/ogreboulotteur.h}
 \label{ogreboulotteur_8h}\index{OgreBoulotteur/ogreboulotteur.h@{OgreBoulotteur/ogreboulotteur.h}}
 
 
-La bibliothèque principale du programme.  
+Bibliothèque principale du programme.  
 
 
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$time.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}foret.\+h\char`\"{}}\newline
-\doxysubsection*{Data Structures}
+\doxysubsection*{Structures de données}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_enfant}{Enfant}}
@@ -45,7 +45,7 @@ struct \mbox{\hyperlink{struct_ogre}{Ogre}}
 \begin{DoxyCompactList}\small\item\em Définit le nombre initial d\textquotesingle{}enfants. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{ogreboulotteur_8h_a94e07b58505f713f7e5b4ccac59f2d84}{F\+O\+R\+E\+T\+\_\+\+D\+E\+N\+S\+I\+TE}}~5
 \begin{DoxyCompactList}\small\item\em Définit la densité d\textquotesingle{}arbre dans la forêt. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Typedefs}
+\doxysubsection*{Définitions de type}
 \begin{DoxyCompactItemize}
 \item 
 typedef char \mbox{\hyperlink{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}{Foret}}\mbox{[}\mbox{\hyperlink{ogreboulotteur_8h_a40a0a806873bf84870b47837708b2814}{F\+O\+R\+E\+T\+\_\+\+H\+A\+U\+T\+E\+UR}}\mbox{]}\mbox{[}\mbox{\hyperlink{ogreboulotteur_8h_a0c48e08ae1a67455f3fcbc1acde9e3c3}{F\+O\+R\+E\+T\+\_\+\+L\+O\+N\+G\+U\+E\+UR}}\mbox{]}
@@ -65,7 +65,7 @@ typedef struct \mbox{\hyperlink{struct_ogre}{Ogre}} {\bfseries Ogre}
 \mbox{\Hypertarget{ogreboulotteur_8h_ad196bf510b28a9ba4c872e96dfd16f92}\label{ogreboulotteur_8h_ad196bf510b28a9ba4c872e96dfd16f92}} 
 typedef enum \mbox{\hyperlink{ogreboulotteur_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} {\bfseries Direction}
 \end{DoxyCompactItemize}
-\doxysubsection*{Enumerations}
+\doxysubsection*{Énumérations}
 \begin{DoxyCompactItemize}
 \item 
 enum \mbox{\hyperlink{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1b}{Etat}} \{ \mbox{\hyperlink{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4}{V\+I\+V\+A\+NT}}, 
@@ -81,10 +81,10 @@ enum \mbox{\hyperlink{ogreboulotteur_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direc
 \begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}indiquer une direction Haut, Bas, Droite ou Gauche. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
-La bibliothèque principale du programme. 
+\doxysubsection{Description détaillée}
+Bibliothèque principale du programme. 
 
-\begin{DoxyAuthor}{Author}
+\begin{DoxyAuthor}{Auteur}
 Jean-\/\+Aymeric D\+I\+ET \href{mailto:jeanaymeric@gmail.com}{\texttt{ jeanaymeric@gmail.\+com}} 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Date}
@@ -92,7 +92,7 @@ August 2020
 \end{DoxyDate}
 
 
-\doxysubsection{Macro Definition Documentation}
+\doxysubsection{Documentation des macros}
 \mbox{\Hypertarget{ogreboulotteur_8h_a94e07b58505f713f7e5b4ccac59f2d84}\label{ogreboulotteur_8h_a94e07b58505f713f7e5b4ccac59f2d84}} 
 \index{ogreboulotteur.h@{ogreboulotteur.h}!FORET\_DENSITE@{FORET\_DENSITE}}
 \index{FORET\_DENSITE@{FORET\_DENSITE}!ogreboulotteur.h@{ogreboulotteur.h}}
@@ -106,7 +106,7 @@ Définit la densité d\textquotesingle{}arbre dans la forêt.
 Plus le nombre est élevé et moins les arbres seront nombreux. Il y a 1 chance sur le nombre entré de créer un arbre. ~\newline
  
 
-\doxysubsection{Typedef Documentation}
+\doxysubsection{Documentation des définitions de type}
 \mbox{\Hypertarget{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}\label{ogreboulotteur_8h_a34a3253d5bd2ac1f264c85ef42731a1c}} 
 \index{ogreboulotteur.h@{ogreboulotteur.h}!Foret@{Foret}}
 \index{Foret@{Foret}!ogreboulotteur.h@{ogreboulotteur.h}}
@@ -123,7 +123,7 @@ Ce tableau à 2 dimensions contient tous les éléments immobiles du programme \
 \item les sols. Sa hauteur est définie par la valeur de F\+O\+R\+E\+T\+\_\+\+H\+A\+U\+T\+E\+UR et sa longueur par F\+O\+R\+E\+T\+\_\+\+L\+O\+N\+G\+U\+E\+UR. 
 \end{DoxyItemize}
 
-\doxysubsection{Enumeration Type Documentation}
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
 \mbox{\Hypertarget{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1b}\label{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1b}} 
 \index{ogreboulotteur.h@{ogreboulotteur.h}!Etat@{Etat}}
 \index{Etat@{Etat}!ogreboulotteur.h@{ogreboulotteur.h}}
@@ -134,7 +134,7 @@ Ce tableau à 2 dimensions contient tous les éléments immobiles du programme \
 
 Donne l\textquotesingle{}état dans lequel se trouve un élément mobile, pour ce programme un \mbox{\hyperlink{struct_enfant}{Enfant}}. 
 
-\begin{DoxyEnumFields}{Enumerator}
+\begin{DoxyEnumFields}{Valeurs énumérées}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{VIVANT@{VIVANT}!ogreboulotteur.h@{ogreboulotteur.h}}\index{ogreboulotteur.h@{ogreboulotteur.h}!VIVANT@{VIVANT}}}\mbox{\Hypertarget{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4}\label{ogreboulotteur_8h_a767b7a63d7677f92d697621b4166af1ba1c63e61bcc802c01941537675433b8f4}} 
 V\+I\+V\+A\+NT&L\textquotesingle{}\mbox{\hyperlink{struct_enfant}{Enfant}} est vivant et peut bouger. \\
 \hline

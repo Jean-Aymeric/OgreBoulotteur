@@ -75,5 +75,7 @@ typedef enum Direction {
     BAS,
     GAUCHE
 } Direction;
-#endif // OGREBOULOTTEUR_H_INCLUDED
+
 #include "foret.h"
+
+#endif // OGREBOULOTTEUR_H_INCLUDED
