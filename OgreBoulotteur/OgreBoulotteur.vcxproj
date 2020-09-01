@@ -139,12 +139,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CUnit\Sources\Automated\Automated.c" />
+    <ClCompile Include="CUnit\Sources\Basic\Basic.c" />
+    <ClCompile Include="CUnit\Sources\Console\Console.c" />
+    <ClCompile Include="CUnit\Sources\Curses\Curses.c" />
+    <ClCompile Include="CUnit\Sources\Framework\CUError.c" />
+    <ClCompile Include="CUnit\Sources\Framework\MyMem.c" />
+    <ClCompile Include="CUnit\Sources\Framework\TestDB.c" />
+    <ClCompile Include="CUnit\Sources\Framework\TestRun.c" />
+    <ClCompile Include="CUnit\Sources\Framework\Util.c" />
+    <ClCompile Include="CUnit\Sources\Test\test_cunit.c" />
+    <ClCompile Include="CUnit\Sources\Win\Win.c" />
+    <ClCompile Include="CUnit\Sources\wxWidget\wxWidget.cpp" />
     <ClCompile Include="enfant.c" />
     <ClCompile Include="foret.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="ogre.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CUnit\Headers\Automated.h" />
+    <ClInclude Include="CUnit\Headers\Basic.h" />
+    <ClInclude Include="CUnit\Headers\Console.h" />
+    <ClInclude Include="CUnit\Headers\CUCurses.h" />
+    <ClInclude Include="CUnit\Headers\CUError.h" />
+    <ClInclude Include="CUnit\Headers\CUnit_intl.h" />
+    <ClInclude Include="CUnit\Headers\MyMem.h" />
+    <ClInclude Include="CUnit\Headers\TestDB.h" />
+    <ClInclude Include="CUnit\Headers\TestRun.h" />
+    <ClInclude Include="CUnit\Headers\Util.h" />
+    <ClInclude Include="CUnit\Headers\wxWidget.h" />
+    <ClInclude Include="CUnit\Sources\Test\test_cunit.h" />
+    <ClInclude Include="CUnit\Sources\Win\resource.h" />
+    <ClInclude Include="CUnit\Sources\Win\Win.h" />
     <ClInclude Include="enfant.h" />
     <ClInclude Include="foret.h" />
     <ClInclude Include="ogre.h" />
