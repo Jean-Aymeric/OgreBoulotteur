@@ -27,42 +27,6 @@
     <ClCompile Include="ogre.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CUnit\Sources\Automated\Automated.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Basic\Basic.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Console\Console.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Curses\Curses.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Framework\CUError.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Framework\MyMem.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Framework\TestDB.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Framework\TestRun.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Framework\Util.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Test\test_cunit.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\Win\Win.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CUnit\Sources\wxWidget\wxWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="enfant.h">
@@ -75,48 +39,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ogreboulotteur.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\Automated.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\Basic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\Console.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\CUCurses.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\CUError.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\CUnit_intl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\MyMem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\TestDB.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\TestRun.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\Util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Headers\wxWidget.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Sources\Test\test_cunit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Sources\Win\resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CUnit\Sources\Win\Win.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
